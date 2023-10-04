@@ -1,7 +1,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -148,6 +151,60 @@ img.avatar {
   opacity: 0.75;
 }
 
+.level {
+  border: 1px solid black;
+  background: white;
+  width: 16em;
+  height: 20px;
+  border-radius: 50px;
+  margin-bottom: 1.5em;
+}
+
+.bar {
+  display: flex;
+  background: rgba(6, 192, 6, 0.203);
+  width: 16em;
+  text-align: center;
+  justify-content: center;
+  height: 20px;
+  border-radius: 50px;
+}
+
+.barR {
+  display: flex;
+  background: rgba(6, 192, 6, 0.203);
+  width: 7em;
+  text-align: center;
+  justify-content: center;
+  height: 20px;
+  border-radius: 50px;
+}
+
+.barS {
+  display: flex;
+  background: rgba(6, 192, 6, 0.203);
+  width: 12em;
+  text-align: center;
+  justify-content: center;
+  height: 20px;
+  border-radius: 50px;
+}
+
+.barV {
+  display: flex;
+  background: rgba(6, 192, 6, 0.203);
+  width: 14em;
+  text-align: center;
+  justify-content: center;
+  height: 20px;
+  border-radius: 50px;
+}
+
+ul li {
+  list-style: none;
+}
+
+
 /***********************************
 * =References
 ***********************************/
@@ -165,7 +222,8 @@ img.avatar {
     grid-template-columns: 1fr;
   }
 
-  .links, .job-title-container {
+  .links,
+  .job-title-container {
     flex-direction: column;
   }
 
